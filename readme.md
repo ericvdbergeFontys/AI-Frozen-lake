@@ -22,6 +22,19 @@ you can use the project by opening a command prompt and using the command:
 ```bash
 git clone git@github.com:ericvdbergeFontys/AI-Frozen-lake.git
 ```
+you can now start the application by typing:
+```bash
+python main.py
+```
 ## Approach
+placeholder......
+
 ## Results
+placeholder......
+
+> **warning**
+> If you want to run this application in debug mode, you can change the `DEBUG` flag in main.py to be `True`
+
+placeholder......
 ## Further suggestions
+placeholder......
