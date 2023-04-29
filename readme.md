@@ -58,13 +58,7 @@ In this image, you can see that the entire matrix is filled with values that cor
 
 I think that we have talked enough now. Lets analyze! what do we think is the best route for our guy to take? The route with the biggest values! Let's draw that onto the screen.
 <img src="./images/value policy map - expected path.png"/>
-If we take the highest value in the value table, then this is the path we want to take to the finish. But does our agent actually do this? You can see that in the video below.
-
-<video width="100%" height="100%" controls>
-  <source src="frozen lake result.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
+If we take the highest value in the value table, then this is the path we want to take to the finish. But does our agent actually do this? You can see that in this <a download href="/frozen lake result.mp4">video</a>.
 The agent is doing exactly what we thought it would. Nice to see that it does work. I think this is one of the easiest solutions of solving this problem in reinforcement learning.
 
 ## Further suggestions
