@@ -1,6 +1,7 @@
 import numpy as np
 import math
 from KPI_nator import KPInator
+import matplotlib.pyplot as plt
 
 class PolicyEvaluationConfig:
     def __init__(self, env, debug, gamma, delta, iterations):
@@ -44,6 +45,7 @@ class PolicyEvaluation:
                 analytics = KPInator()
                 size = round(math.sqrt(self.env.observation_space.n))
                 analytics.visualize_value_evaluation(Vπt, (size,size))
+                plt.title("iteration: {}".format(iteration))
 
             if(np.max(np.abs(self.Vπ-Vπt)) < self.conf.delta):
                 self.Vπ = Vπt   

@@ -3,9 +3,9 @@ import gym
 from policy_evaluation import PolicyEvaluation, PolicyEvaluationConfig
 
 #==================== setup ====================#
-DEBUG = False #if you want the debug results for in between training, you can set DEBUG = True
+DEBUG = True #if you want the debug results for in between training, you can set DEBUG = True
 
-size = 8
+size = 4
 map_name = "8x8" if size == 8  else "4x4"
 env = gym.make('FrozenLake-v1', render_mode="human", map_name=map_name, is_slippery=False)
 env.reset()
@@ -18,7 +18,7 @@ print("DEBUG: observation_space: {}".format(env.observation_space.n))
 # actions: left 0, down 1, right 2, up 3 = 4 possible actions
 print("DEBUG: action_space: {}".format(env.action_space.n)) 
 
-#we can ask the environment at a particular state, when you want to perform action x, what the probabilities are
+# we can ask the environment at a particular state, when you want to perform action x, what the probabilities are
 # using env.P[state][action]
 state = 0
 action = 0
